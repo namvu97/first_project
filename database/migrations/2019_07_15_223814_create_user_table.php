@@ -1,11 +1,11 @@
 <?php
-
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
 class CreateUserTable extends Migration
 {
+
     /**
      * Run the migrations.
      *
@@ -17,7 +17,7 @@ class CreateUserTable extends Migration
             $table->Increments('id');
             $table->string('username');
             $table->string('password');
-            $table->string('email',50)->default('admin@gmail.com');
+            $table->string('email', 50)->default('admin@gmail.com');
             $table->string('full_name');
             $table->boolean('is_Admin')->default(0);
             $table->string('photo', 100)->nullable();

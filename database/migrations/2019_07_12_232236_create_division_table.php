@@ -1,11 +1,11 @@
 <?php
-
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
 class CreateDivisionTable extends Migration
 {
+
     /**
      * Run the migrations.
      *
@@ -16,7 +16,7 @@ class CreateDivisionTable extends Migration
         Schema::create('division', function (Blueprint $table) {
             $table->increments('id');
             $table->string('division_name', 40);
-            $table->string('division_phone',13);
+            $table->string('division_phone', 25);
             $table->string('manager_name', 40);
         });
     }

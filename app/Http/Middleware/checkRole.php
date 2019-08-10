@@ -6,6 +6,7 @@ use Closure;
 
 class checkRole
 {
+
     /**
      * Handle an incoming request.
      *
@@ -17,6 +18,7 @@ class checkRole
     {
         if (session()->get('is_Admin') == '1') {
             return $next($request);
-        }else return redirect('home');
+        } else
+            return redirect('home');
     }
 }

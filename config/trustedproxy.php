@@ -1,5 +1,4 @@
 <?php
-
 return [
 
     /*
@@ -46,5 +45,4 @@ return [
      * @link https://symfony.com/doc/current/deployment/proxies.html
      */
     'headers' => Illuminate\Http\Request::HEADER_X_FORWARDED_ALL,
-
 ];

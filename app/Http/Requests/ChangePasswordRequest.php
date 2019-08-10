@@ -6,6 +6,7 @@ use Illuminate\Foundation\Http\FormRequest;
 
 class ChangePasswordRequest extends FormRequest
 {
+
     /**
      * Determine if the user is authorized to make this request.
      *
@@ -29,16 +30,17 @@ class ChangePasswordRequest extends FormRequest
             'new_password_repeat' => 'required',
         ];
     }
+
     public function messages()
     {
         return [
-            'old_password.required'=>'Mật khẩu cũ không được để trống!',
-            'old_password.min'=>'Mật khẩu phải ít nhất 6 ký tự!',
-            'old_password.max'=>'Mật khẩu nhiều nhất 15 ký tự!',
-            'new_password.required'=>'Mật khẩu mới không được để trống!',
-            'new_password.min'=>'Mật khẩu phải ít nhất 6 ký tự!',
-            'new_password.max'=>'Mật khẩu nhiều nhất 15 ký tự!',
-            'new_password_repeat.required'=>'Mật khẩu lặp lại không được để trống!',
+            'old_password.required' => 'Mật khẩu cũ không được để trống!',
+            'old_password.min' => 'Mật khẩu phải ít nhất 6 ký tự!',
+            'old_password.max' => 'Mật khẩu nhiều nhất 15 ký tự!',
+            'new_password.required' => 'Mật khẩu mới không được để trống!',
+            'new_password.min' => 'Mật khẩu phải ít nhất 6 ký tự!',
+            'new_password.max' => 'Mật khẩu nhiều nhất 15 ký tự!',
+            'new_password_repeat.required' => 'Mật khẩu lặp lại không được để trống!',
         ];
     }
 }

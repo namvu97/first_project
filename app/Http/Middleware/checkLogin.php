@@ -6,6 +6,7 @@ use Closure;
 
 class checkLogin
 {
+
     /**
      * Handle an incoming request.
      *
@@ -15,7 +16,7 @@ class checkLogin
      */
     public function handle($request, Closure $next)
     {
-        if(session()->has('username')==true){
+        if (session()->has('username') == true) {
             return redirect('home');
         }
         return $next($request);
